@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>BMO Arcade</title>
+    <link rel="stylesheet" href="css/juego.css">
+  </head>
+  <body>
+    <div class="col-40">
+    
+      <div id="titulo">
+      </div>
+      <div id="instrucciones">
+        <h2>Instrucciones</h2>
+        <ul id="lista-instrucciones">
+        </ul>
+      </div>
+      <div id="objetivo">
+        <div class="texto-centrado">
+          <h2>Objetivo Final</h2>
+          <img src="images/final.png" alt="objetivo final" id="objetivoFinal" class="objetivoFinal">
+        </div>
+      </div>
+      <div id="ultimo-mov">
+        <h2>Último Movimiento</h2>
+        <div id="flecha" class="texto-centrado"></div>
+        <h2>Cant de Movimientos</h2>
+        <div id="movi" class="texto-centrado"></div>
+      </div>
+      
+    </div>
+    <div class="col-60">
+      <div id="juego">
+        <div class="piezas">
+            <div id="pieza1">
+                <img id="imagen1" src="images/10.jpg" alt="">
+            </div>
+            <div id="pieza2">
+                <img id="imagen2" src="images/20.jpg" alt="">
+            </div>
+            <div id="pieza3">
+                <img id="imagen3" src="images/30.jpg" alt="">
+            </div>
+            <div id="pieza4">
+                <img id="imagen4" src="images/40.jpg" alt="">
+            </div>
+            <div id="pieza5">
+                <img id="imagen5"  src="images/50.jpg" alt="">
+            </div>
+            <div id="pieza6">
+                <img id="imagen6" src="images/60.jpg" alt="">
+            </div>
+            <div id="pieza7">
+                <img id="imagen7" src="images/70.jpg" alt="">
+            </div>
+            <div id="pieza8">
+                <img id="imagen8" src="images/80.jpg" alt="">
+            </div>
+            <div id="pieza9">
+                <div class="pieza-vacia"></div>
+            </div>
+        </div>
+      </div>
+    </div>
+    <div id="footer">
+      <a class="mix" href="#" onclick="mezclarPiezas(50)">Mezclar Nuevamente</a>
+      <a href="#" onclick="cambiarJuego()" id="cambiarJuego">Cambiar Juego</a>
+    </div>
+    <script src="js/juego.js"></script>
+  </body>
+</html>
